@@ -15,11 +15,18 @@
 </head>
 
 <body>
+
+    <!-- Header -->
+
     <header>
+
+        <!-- Navbar -->
+
         <nav id="navbar" class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid bg-white">
                 <a class="navbar-brand" href="#">
-                    <img src="img/mobile-logo.png" class="img-fluid" alt="mobile logo">
+                    <img src="img/mobile-logo.png" class="img-fluid d-lg-none" alt="mobile logo">
+                    <img src="img/logo.svg" alt="logo" class="img-fluid d-none d-lg-block">
                 </a>
 
                 <form class="d-flex flex-grow-1">
@@ -31,8 +38,14 @@
                             aria-describedby="basic-addon1">
                     </div>
                 </form>
+
+                <!-- Icon -->
+
                 <div class="ms-2 dropstart">
-                    <i class="fas fa-bell" data-bs-toggle="dropdown" aria-expanded="false" role="button"></i>
+                    <i class="fa-solid fa-bars px-1 d-none d-lg-inline" style="color: #000000;"></i>
+                    <i class="fa-solid fa-circle-question px-1 d-none d-lg-inline" style="color: #000000;"></i>
+                    <i class="fa-solid fa-ellipsis-vertical px-1 d-none d-lg-inline" style="color: #000000;"></i>
+                    <i class="fas fa-bell px-1" data-bs-toggle="dropdown" aria-expanded="false" role="button"></i>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -42,7 +55,11 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main -->
+
     <main>
+
         <div class="d-flex">
 
             <!-- Menubar -->
@@ -55,6 +72,8 @@
 
         </div>
     </main>
+
+    <!-- Java Script -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

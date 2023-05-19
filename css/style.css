@@ -41,3 +41,13 @@ header .fa-bell{
 .bg-grey{
     background-color: #e5e5e5;
 }
+
+/* Laptop */
+
+@media screen and (min-width: 992px) {
+    
+    header img{
+      width: 150px;
+      
+    }
+}
