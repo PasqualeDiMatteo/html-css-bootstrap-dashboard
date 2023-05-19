@@ -22,7 +22,7 @@
 
         <!-- Navbar -->
 
-        <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-light h-100">
             <div class="container-fluid bg-white">
                 <a class="navbar-brand" href="#">
                     <img src="img/mobile-logo.png" class="img-fluid d-lg-none" alt="mobile logo">
@@ -33,7 +33,7 @@
                     <div class="input-group">
                         <span class="input-group-text bg-grey border-end-0" id="basic-addon1"><i
                                 class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control border-start-0 bg-grey ps-0"
+                        <input type="text" class="form-control border-start-0 bg-grey ps-0 shadow-none"
                             placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
@@ -64,7 +64,51 @@
 
             <!-- Menubar -->
 
-            <nav id="menubar"></nav>
+            <nav id="menubar">
+                <div class="d-flex py-3 flex-column align-items-center justify-content-between h-100">
+
+                    <!-- Top-Menu -->
+
+                    <div class="top-menu">
+
+                        <div class="icon">
+                            <a href="#" class="link-light">
+                                <i class="fas fa-house"></i>
+                                <span class="d-none d-lg-inline">Home</span>
+                            </a>
+                        </div>
+
+                        <!-- Chart menu  -->
+
+                        <div class="icon">
+                            <a href="#" class="link-light">
+                                <i class="fas fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline">Stats</span>
+                            </a>
+                        </div>
+
+                        <!-- Signal menu  -->
+
+                        <div class="icon">
+                            <a href="#" class="link-light">
+                                <i class="fas fa-signal"></i>
+                                <span class="d-none d-lg-inline">Signals</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bot-Menu  -->
+
+                    <div class="bot-side">
+                        <div class="icon">
+                            <a href="#" class="link-light">
+                                <i class="fas fa-gear"></i>
+                                <span class="d-none d-lg-inline">Admin</span>
+                            </a>
+                        </div>
+
+                    </div>
+            </nav>
 
             <!-- Main section -->
 

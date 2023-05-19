@@ -11,6 +11,7 @@
 
 header{
     background-color: black;
+    height: 80px;
 }
 
 header img{
@@ -21,11 +22,28 @@ header .fa-bell{
     color: orange;
 }
 
+/* Menubar */
+
 #menubar {
     width: var(--menubar-xs-width);
     height: calc(100vh - 80px);
-    background-color: red;
+    background-color: var(--menubar-bg-color);
+    background-image: url(../img/sidebar-bg.png);
 }
+
+.icon {
+    padding: 3px 0;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon i {
+    width: 30px;
+}
+
+/* Dashboard */
 
 #dashboard {
     height: calc(100vh - 80px);
@@ -33,6 +51,8 @@ header .fa-bell{
     width: 100%;
     overflow-y: auto;
 }
+
+/* Utilities */
 
 .bg-white{
     background-color: white;
@@ -46,6 +66,11 @@ header .fa-bell{
 
 @media screen and (min-width: 992px) {
     
+    #menubar{
+        width: var(--menubar-lg-width);
+        
+    }
+
     header img{
       width: 150px;
       
