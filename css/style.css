@@ -1,0 +1,27 @@
+/* Custom Properties */
+
+:root{
+    --menubar-bg-color: #051e34;
+    --sky-blue-bg-color: #1b72e8;
+    --menubar-lg-width: 150px;
+    --menubar-xs-width: 80px;
+}
+
+
+header{
+    min-height: 80px;
+    background-color: black;
+}
+
+nav {
+    width: var(--menubar-xs-width);
+    height: calc(100vh - 80px);
+    background-color: red;
+}
+
+#dashboard {
+    height: calc(100vh - 80px);
+    background-color: #555;
+    width: 100%;
+    overflow-y: auto;
+}
