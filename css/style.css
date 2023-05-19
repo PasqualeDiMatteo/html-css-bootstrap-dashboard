@@ -7,13 +7,21 @@
     --menubar-xs-width: 80px;
 }
 
+/* Header */
 
 header{
-    min-height: 80px;
     background-color: black;
 }
 
-nav {
+header img{
+    width: 50px;
+}
+
+header .fa-bell{
+    color: orange;
+}
+
+#menubar {
     width: var(--menubar-xs-width);
     height: calc(100vh - 80px);
     background-color: red;
@@ -24,4 +32,12 @@ nav {
     background-color: #555;
     width: 100%;
     overflow-y: auto;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-grey{
+    background-color: #e5e5e5;
 }
