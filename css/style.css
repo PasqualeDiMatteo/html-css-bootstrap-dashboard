@@ -52,6 +52,7 @@ header .fa-bell{
     overflow-y: auto;
 }
 
+
 /* Utilities */
 
 .bg-white{
@@ -62,6 +63,13 @@ header .fa-bell{
     background-color: #e5e5e5;
 }
 
+.bg-badge-blue{
+    background-color:#165bba;
+}
+
+.bg-sky-blue{
+    background-color:var(--sky-blue-bg-color);
+}
 /* Laptop */
 
 @media screen and (min-width: 992px) {

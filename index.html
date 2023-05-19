@@ -112,7 +112,72 @@
 
             <!-- Main section -->
 
-            <section id="dashboard"></section>
+            <section id="dashboard">
+
+                <!-- Info students -->
+
+                <div id="info-students" class="text-white bg-sky-blue p-3 ">
+                    <div class="row">
+
+                        <!-- New Student  -->
+
+                        <div
+                            class="new-student col-12 col-md-3 py-4 d-flex align-items-center order-md-2 py-md-0 align-items-md-start justify-content-lg-end">
+                            <div class="d-flex align-items-center">
+                                <span class="me-3">Nuovo Studente</span>
+                                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                    <i class="fas fa-plus fa"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
+                                id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        I will not close if you click outside of me.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Boolean app pills  -->
+
+                        <div class="col-12 col-md-6 pb-4">
+                            <div>
+                                <h1 class="d-inline">Boolean</h1>
+                                <span class="badge rounded-pill bg-badge-blue">Piano blaze</span>
+                            </div>
+                            <div>
+                                <span class="badge rounded-pill bg-badge-blue">3 app</span>
+                                <span class="h4">&#187;</span>
+                                <span class="badge rounded-pill bg-badge-blue d-lg-none"><i
+                                        class="fas fa-plus"></i></span>
+                                <span class="badge rounded-pill bg-badge-blue d-none d-lg-inline">Boolean mobile
+                                    app</span>
+                                <span class="badge rounded-pill bg-badge-blue d-none d-lg-inline">Boolean web app</span>
+                                <span class="badge rounded-pill bg-badge-blue d-none d-lg-inline">Boolean blog
+                                    app</span>
+                            </div>
+                        </div>
+
+                        <!-- Online students  -->
+
+                        <div class="col-12 col-md-3 pb-4 order-md-1">
+                            <div>
+                                <p class="mb-1">Studenti online negli ultimi 30 minuti</p>
+                            </div>
+                            <div>
+                                <span class="h1">125</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
     </main>
