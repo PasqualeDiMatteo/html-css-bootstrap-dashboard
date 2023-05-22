@@ -22,6 +22,11 @@ header .fa-bell{
     color: orange;
 }
 
+.dropstart .dropdown-menu[data-bs-popper] {
+    top: 25px;
+    right: 10%;
+}
+
 /* Menubar */
 
 #menubar {
@@ -47,9 +52,13 @@ header .fa-bell{
 
 #dashboard {
     height: calc(100vh - 80px);
-    background-color: #ffffff;
-    width: 100%;
+    background-color: #f8f9fa;
+    width: calc(100vh - 80px);
     overflow-y: auto;
+}
+
+.offcanvas.offcanvas-end{
+    width: 100%;
 }
 
 /* Table */
@@ -100,5 +109,13 @@ header .fa-bell{
     header img{
       width: 150px;
       
+    }
+
+    #dashboard {
+        width: calc(100vw - 150px);
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 50%;
     }
 }
