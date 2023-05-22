@@ -27,6 +27,11 @@ header .fa-bell{
     right: 10%;
 }
 
+.form-control:focus{
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+}
+
 /* Menubar */
 
 #menubar {
@@ -37,15 +42,22 @@ header .fa-bell{
 }
 
 .icon {
-    padding: 3px 0;
+    padding: 10px;
 }
 
 .icon a {
     text-decoration: none;
 }
+.icon i{
+    width: 20px;
+}
 
-.icon i {
-    width: 30px;
+.icon span {
+    margin-left: 15px;
+}
+
+#menubar .icon:hover{
+    background-color: rgba(255, 255, 255, .5);
 }
 
 /* Dashboard */
@@ -73,7 +85,9 @@ header .fa-bell{
     align-items: center;
 }
 
-
+tbody tr:hover{
+    background-color: #f7f7f7;
+}
 
 /* Utilities */
 

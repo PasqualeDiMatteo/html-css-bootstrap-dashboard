@@ -47,9 +47,9 @@
                     <i class="fa-solid fa-ellipsis-vertical px-1 d-none d-lg-inline" style="color: #000000;"></i>
                     <i class="fas fa-bell px-1" data-bs-toggle="dropdown" aria-expanded="false" role="button"></i>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -106,8 +106,8 @@
                                 <span class="d-none d-lg-inline">Admin</span>
                             </a>
                         </div>
-
                     </div>
+                </div>
             </nav>
 
             <!-- Main section -->
@@ -130,10 +130,14 @@
                                     <i class="fas fa-plus fa"></i>
                                 </button>
                             </div>
+
+                            <!-- Offcanvas -->
+
                             <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
                                 id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                                    <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente
+                                    </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
                                 </div>
@@ -141,11 +145,11 @@
                                     <div>
                                         <form class="row g-3">
                                             <div class="col-md-6">
-                                                <label for="inputnome" class="form-label">Nome</label>
+                                                <label for="inputname" class="form-label">Nome</label>
                                                 <input type="text" class="form-control" id="inputname" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="inputcognome" class="form-label">Cognome</label>
+                                                <label for="inputsurname" class="form-label">Cognome</label>
                                                 <input type="text" class="form-control" id="inputsurname" required>
                                             </div>
                                             <div class="col-md-6">
@@ -169,9 +173,10 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <label for="inputState" class="form-label">Stato</label>
-                                                <select id="inputState" class="form-select" required>
-                                                    <option selected>Scegli...</option>
-                                                    <option>...</option>
+                                                <select id="inputState" class="form-select">
+                                                    <option value="ita">Italy</option>
+                                                    <option value="fra">France</option>
+                                                    <option value="spa">Spain</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-2">
@@ -193,7 +198,7 @@
                                             </div>
                                             <div class="col-12">
                                                 <button type="submit" class="btn btn-primary">Salva</button>
-                                                <button type="submit" class="btn btn-warning">Svuota</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
                                             </div>
                                         </form>
                                     </div>
@@ -235,6 +240,7 @@
                 </div>
 
                 <!-- Card Announced Classes-->
+
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-lg-8">
@@ -262,6 +268,7 @@
                                         </thead>
 
                                         <!-- Table Body -->
+
                                         <tbody>
 
                                             <!-- Table row -->
@@ -319,7 +326,7 @@
                                                 </th>
                                                 <td class="d-none d-md-table-cell">17 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
-                                                <td><span class="badge text-bg-warning">process</span></td>
+                                                <td><span class="badge text-bg-warning text-white">process</span></td>
                                                 <td>
                                                     <div class="btn-group gap-2 " role="group"
                                                         aria-label="Basic example">
@@ -459,6 +466,9 @@
                                 <div class="card-header">
                                     <b class="fs-3">F.A.Q.</b>
                                 </div>
+
+                                <!-- Accordion -->
+
                                 <div class="accordion accordion-flush p-2" id="accordionFlushExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -470,11 +480,7 @@
                                         </h2>
                                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to
-                                                demonstrate the <code>.accordion-flush</code> class. This is the first
-                                                item's
-                                                accordion body.</div>
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -487,12 +493,7 @@
                                         </h2>
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to
-                                                demonstrate the <code>.accordion-flush</code> class. This is the second
-                                                item's
-                                                accordion body. Let's imagine this being filled with some actual
-                                                content.
+                                            <div class="accordion-body">Clicca sull'icona della campanella.
                                             </div>
                                         </div>
                                     </div>
@@ -506,17 +507,10 @@
                                         </h2>
                                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to
-                                                demonstrate the <code>.accordion-flush</code> class. This is the third
-                                                item's
-                                                accordion body. Nothing more exciting happening here in terms of
-                                                content,
-                                                but
-                                                just
-                                                filling up the space to make it look, at least at first glance, a bit
-                                                more
-                                                representative of how this would look in a real-world application.</div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur,
+                                                adipisicing elit. Officiis repellendus, a fugit blanditiis, nulla
+                                                sapiente obcaecati exercitationem quod optio atque nostrum nemo vero
+                                                velit doloremque repellat tempora animi molestias autem!</div>
                                         </div>
                                     </div>
                                 </div>
